@@ -33,7 +33,6 @@ public class ClickCountService {
 
     /**
      * Seeds the leaderboard entry for a newly created short code (score 0).
-     * Ensures it appears in the leaderboard even before its first click.
      */
     public void initLeaderboardEntry(String shortCode) {
         redisTemplate.opsForZSet().addIfAbsent(LEADERBOARD_KEY, shortCode, 0);
