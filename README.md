@@ -19,24 +19,29 @@ Spring Boot + MongoDB + Redis backend, React frontend.
 ## Run it
 
 ### Prerequisites
+
 - Java 17+, Maven
 - Node 18+
 - MongoDB running on `localhost:27017`
 - Redis running on `localhost:6379`
 
 ### Backend
+
 ```bash
 cd backend
 mvn spring-boot:run
 ```
+
 Runs on `http://localhost:8080`.
 
 ### Frontend
+
 ```bash
 cd frontend
 npm install
 npm start
 ```
+
 Runs on `http://localhost:3000`.
 
 ## API
